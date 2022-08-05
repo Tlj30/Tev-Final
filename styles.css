@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+      overflow-y: hidden;
+      /* scrollbar-width: none !important; */
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: black; 
+      position: relative;
+    }
+    #preloader{
+        background: black url(cssPhotos/giphy.gif) no-repeat center center;
+        height: 100vh;
+        width: 100%; 
+        position: fixed;
+        z-index: 101;
+        background-size: 30%;
+        /* opacity:0; */
+       
+    }
+
+    @font-face {
+        font-family: infiniteDarkness;
+        src: url(Infinite\ Darkness.jpg);
+    }
+
+    /* .nav--hidden {
+        transform: translateY(calc(-1 * var(--nav-height)));
+        box-shadow: none;
+      } */
+
+      /* nav{
+        transition: transform 0.2s
+      } */
+
+    /* .text-container {
+        position: relative;
+      }
+      
+      .a, .b {
+        font-size: 50px;
+        font-family: 'Courier New', monospace;
+        letter-spacing: 4px;
+        position: relative;
+        line-height:.2;
+      }
+      
+      .a:before, .b:before {
+        content:"";
+        position: absolute;
+        background-color: #faedcd;
+        height: 55px;
+        top:-14px;
+        left:-2px;
+      }
+      
+      .a:before {
+        width:220px;
+        animation: move 2s steps(6,end) forwards 1s;
+      }
+      
+      
+      @keyframes move {
+        0% {transform: translateX(0);opacity:1;}
+        80% {transform: translateX(201px);opacity:1;}
+        100% {transform: translateX(201px); opacity:0;}
+      }
+      
+      .a:after, .b:after {
+        content:"|";
+        font-weight: 100;
+        left:-5px;
+        top:-2px;
+        position: absolute;
+      }
+      
+      .a:after {
+        animation: move 2s steps(6,end) forwards 1s;
+      }
+      
+      .b:before {
+        width:420px;
+        animation: moveTwo 4s steps(12,end) forwards 3.2s;
+      }
+      
+      .b:after {
+        opacity:0;
+        animation: moveTwo 4s steps(12,end) forwards 3.2s, blink .7s ease infinite 6.5s;
+      }
+      
+      @keyframes moveTwo {
+        0% {transform: translateX(0);opacity:1;}
+        80% {transform: translateX(411px);opacity:1;}
+        100% {transform: translateX(411px); opacity:1;}
+      }
+      
+      @keyframes blink {
+        from { opacity: 1; }	
+          to { opacity: 0; }
+      } */
+    
+
+    #logo{
+    font-family:infiniteDarkness;
+    color:#e3aa00;
+    /* color:black; */
+    position:absolute;
+    z-index: 100;
+    height: 85px;
+    width: 50vw;
+    /* border:solid 2px white; */
+    display:flex;
+    align-items: center;
+    }
+
+    #logo h2{
+    padding-left:8%;
+    }
+
+    #logo h2:hover{
+        color:white;
+    }
+   
+    .nav_links{
+        font-family: infiniteDarkness;
+        list-style: none;
+        font-size: 25px;
+    }
+
+    .nav_links li a{
+        color:#e3aa00;
+        /* color:black; */
+        transition: all .3 ease 0s;
+        text-decoration: none;
+    }
+
+    .nav_links li a:hover{
+        color:white;
+        transition: all .3 ease 0s;
+    }
+
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 20px; 
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background-color:black;
+        /* background-color: #e3aa00; */
+        /* border: 2px solid #ebcc94 ; */
+        height: 85px;
+        position:fixed;
+        width:50vw;
+        z-index: 99;
+    }
+
+    
+    
+    #grid-section{
+      /* border: 2px purple solid; */
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 100%;
+      overflow-y: hidden;
+      position: relative;
+    }
+    
+    #bio-section{
+      grid-row: 1;
+      grid-column: 1;
+      /* max-width: 1000px; */
+      position: relative;
+      margin: auto;
+      width: 50vw;
+      height: 100vh;
+
+      /* border: 2px green solid; */
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ebcc94;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text{
+    /* border: #e3aa00 solid 2px; */
+    color:#ebcc94 ;
+    /* bottom: 15vh; */
+    position: absolute;
+    /* bottom: 8px; */
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 25px;
+    display:flex;
+    align-items: center;
+
+    
+    font-family: 'Cormorant SC', serif;
+    
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 400;
+    /* font-family: 'Libre Franklin', sans-serif; */
+    
+    
+    }
+    
+    .text p{
+    padding: 10%;
+    }
+    
+    #image1{
+    position: absolute;
+    background-image: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.95) ), url(cssPhotos/rockStar.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    #image2{
+      position: absolute;
+      background-image: linear-gradient( rgba(0,0,0,.35), rgba(0,0,0,.95) ), url(cssPhotos/thinking.jpg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: left;
+    }
+    
+    #image3{
+    position: absolute;
+      background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,.95) ), url(cssPhotos/lookAway.jpg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-position-y:top;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+      /* LISTENING SECTION */
+      #listen-section{
+        /* border: 2px gold solid; */
+        grid-row: 1;
+        grid-column: 2;
+        width: 50vw;
+        overflow:auto;
+        height: 100vh;
+        overflow-x: hidden;
+        
+    }
+    
+    .content{
+        background-color: #7F4B1A;
+    }
+
+    /* on body hover --- text 2 and 3 opcity 0; */
+    .content1{
+        height: 100vh;
+        display: flex;
+        width: 49vw;
+        align-items: center;
+         text-align: center;
+         /* border: #e3aa00 2px solid; */
+        /* justify-content: space-evenly; */
+        /* margin-left: 10%;
+        margin-right: 10%; */
+    }
+   
+
+    .slide-effect{
+        position: relative;
+        overflow:hidden;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        background-color: black;
+        color:#e3aa00;
+        font-family: infiniteDarkness;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid yellow; */
+    }
+
+    .slide-effect .slide-up{
+        top:40px;
+        /* left:10px; */
+        animation: slideUp ease .5s forwards 1.2s;
+        opacity: 0;
+        position: relative;
+        font-size: 3em;
+    }
+
+    @keyframes slideUp {
+        0% {transform: translateY(0);}
+        100% {transform: translateY(-40px);opacity:1;}
+      }
+    
+    .single{
+        text-align: center;
+        width: 100%;
+        
+    }
+    .single p{
+        font-size: 1.2em;
+        
+        color:#ebcc94;
+       
+    }
+    
+    .image-section img{
+        width: 90%;
+        height: auto;
+        transition: 0.6s ease-in-out;
+    }
+    
+    .image-section img:hover{
+      width: 95%;
+      height: auto;
+      transition: 0.4s ease-in-out;
+    }
+    
+    
+    .listenBtn{
+        /* position: absolute; */
+        height: auto;
+        z-index: 4;
+        font-size: 16px;
+        border:#ebcc94 2px solid;
+        margin-left:27%;
+        margin-right:27%;
+        margin-top: 5%;
+        padding: 3%;
+        border-radius: 1px;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* background-color: white; */
+        font-family: 'Cormorant SC', serif;
+        font-weight: 600;
+        transition: 0.6s ease-in-out;
+    }
+    
+    .listenBtn:hover{
+        background-color: #ebcc94;
+        color:#7F4B1A;
+        padding: 4%;
+        transition: 0.6s ease-in-out;
+    }
+    
+    .listenBtn a{
+        text-decoration: none;
+        color:#ebcc94;
+        
+        
+    }
+    .listenBtn:hover a{
+        text-decoration: none;
+        color:#7F4B1A;
+        
+    }
+    
+    #album-section h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        /* background-attachment: fixed; */
+        color:#e3aa00;
+        /* font-family: 'Bungee Shade'; */
+        font-family: infiniteDarkness;
+    
+    }
+
+    .slide-effect .slide-up2{
+        top:40px;
+        /* left:10px; */
+        animation: slideUp ease .5s forwards 1.2s;
+        opacity: 0;
+        position: relative;
+        font-size: 3em;
+    }
+
+    @keyframes slideUp {
+        0% {transform: translateY(0);}
+        100% {transform: translateY(-40px);opacity:1;}
+      }
+    
+    .content2{
+      height: 100vh;
+      display: flex;
+      width: 49vw;
+      align-items: center;
+    text-align: center;
+    }
+    
+    
+    .album{
+      text-align: center;
+      width: 100%;
+       
+    }
+    .album p{
+       font-size: 1.2em;
+       font-family: 'Times New Roman', Times, serif;
+       color:#ebcc94;
+      
+    }
+    
+    /* if he ever wants a third album there */
+    /* .album1{
+        grid-row: 1;
+        grid-column: 1;
+        border: red 3px solid;
+        width: 140%;
+        text-align: center;
+    }
+    
+    
+    .album2{
+        grid-row: 1;
+        grid-column: 3;
+        border: red 3px solid;
+        width: 140%;
+        text-align: center;
+    }
+    
+    .album3{
+        grid-row:2;
+        grid-column: 2;
+        border: red 3px solid;
+        width: 150%;
+        text-align: center;
+    } */
+    
+    /* VIDEO SECTION */
+    #video-section h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color:#e3aa00;
+        /* font-family: 'Bungee Shade'; */
+        font-family: infiniteDarkness;
+        /* font-family: Recons; */
+        font-size: 3em;
+    
+    }
+    
+    .slide-effect .slide-up3{
+        top:40px;
+        /* left:10px; */
+        animation: slideUp ease .5s forwards 1.2s;
+        opacity: 0;
+        position: relative;
+        font-size: 3em;
+        
+    }
+
+    @keyframes slideUp {
+        0% {transform: translateY(0);}
+        100% {transform: translateY(-40px);opacity:1;}
+      }
+
+    .content3{
+        height:100vh;
+        width: 50vw;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        align-items:center;
+        /* border: 2px solid yellow; */
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .mv1 iframe{
+      /* width: 400;
+      height: 225; */
+      /* border: #e3aa00 2px solid; */
+    }
+    
+    .music-video iframe{
+       max-width: 50vw;
+       
+    }
+    
+    .videoListenBtn a{
+        font-size: 1em;
+
+    }
+    
+    .music-video .videoListenBtn{
+      margin-top:-.1%;
+        
+    }
+    
+    /* POPOUT SECTION*/
+    #popOutContainer{
+      position: absolute;
+      z-index: 15;
+      width: 100vw;
+      height: 100vh;
+    
+    }
+    
+    #popOutVideo1{
+      position: absolute;
+    }
+    
+    @font-face {
+        font-family: infiniteDarkness;
+        src: url(infiniteDarkness.ttf);
+      }
+      
+      /* div {
+        font-family: infiniteDarkness;
+      } */
+    
+    /* @font-face {
+    font-family: Recons;
+    src: url(Recons.ttf);
+    } */
+    
+    
+    /* Media Queries */
+    @media (min-width: 1559px){
+        .text{
+            font-size: 30px;
+        }
+
+        .slide-effect .slide-up{
+            font-size: 60px;
+        }
+        .slide-effect .slide-up2{
+            font-size: 60px;
+        }
+        .slide-effect .slide-up3{
+            font-size: 60px;
+        }
+    }

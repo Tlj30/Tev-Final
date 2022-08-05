@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="music.js"></script>  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Bungee+Shade&family=Cairo:wght@200;300;400;500&family=Cormorant+SC:wght@300;400;600&family=Libre+Franklin:wght@100;300;400;500&family=Uchen&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Franklin:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Expletus+Sans&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/e7ef144ec0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    
+   
+    
+    <div id="grid-section">
+        <div id="logo"><h2>blvck</h2></div>
+        <div id="bio-section">
+            <div class="mySlides fade">
+             <!-- <img src="cssPhotos/rockStar.jpg" style="width:100%"> -->
+             <div id=image1></div>
+             <div class="text">
+                <p>Nov 22nd, 2015 was the day he knew he would be here forever. 
+                That day his 1st song was recorded and he never looked back! 
+                </p>
+            </div>
+            </div>
+          
+          <div class="mySlides fade">
+            <!-- <img src="cssPhotos/lookAway.jpg" style="width:100%"> -->
+            <div id=image2></div>
+            <div class="text">
+                <p>BLVCK, a native of Raleigh creates music that causes 
+                    you to get lost in the deep cuts and vibrant lyrics 
+                    and feel good about yourself all at the same time. His 
+                    music is a vibe that can not be duplicated because it's so 
+                    hard to find a singer/rapper with that much talent. 
+                </p> 
+            </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <!-- <img src="cssPhotos/thinking.jpg" style="width:100%"> -->
+            <div id=image3></div>
+            <div class="text">
+                <p>From live shows as a kid, to headlining local artist 
+                    shows he has done it. He puts on a hell of a show! Most
+                     young artists can't do that or have the charisma to 
+                     make it far. Young Drake, Big Sean, and PND come to 
+                     mind when we hear his music but with his own twist! 
+                </p>
+            </div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+              
+            }
+
+            // function popOut(){
+            //    let video1 = document.getElementById("");
+            // }
+
+            // function exitPopOut(){
+
+            // }
+            
+        $( document ).ready(function() {
+         $('#headerVideoLink').magnificPopup({
+          type:'inline',
+          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+          
+        });
+
+        // Enable hidden nav bar
+{
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
+   
+        </script>
+            
+        <!-- <div id="slider"> -->
+      
+            <!-- <div id="bio-section">
+                <div class="slide1">
+                    <img src="aladdin.jpg" alt="this is his first image">
+                    <div id="text">
+                        <h1>BLVCK</h1> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Nihil architecto nisi commodi maiores, earum minima illo autem. 
+                            Velit facilis consectetur veritatis exercitationem, officia pariatur
+                            corrupti omnis doloribus sapiente quod labore!
+                        </p> 
+                    </div>
+                </div>
+                <div class="slide2">
+                    <img src="artHouse.jpg" alt="this is his second image">
+                    <div id="text">
+                        <h1>BLVCK</h1> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Nihil architecto nisi commodi maiores, earum minima illo autem. 
+                            Velit facilis consectetur veritatis exercitationem, officia pariatur
+                            corrupti omnis doloribus sapiente quod labore!
+                        </p> 
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="bibble.jpg" alt="this is his thrid image">
+                    <div id="text">
+                        <h1>BLVCK</h1> 
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Nihil architecto nisi commodi maiores, earum minima illo autem. 
+                            Velit facilis consectetur veritatis exercitationem, officia pariatur
+                            corrupti omnis doloribus sapiente quod labore!
+                        </p> 
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        
+        <div id="listen-section">
+            <header>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="home_index.html">HOME</a></li>
+                        <li><a href="listen.html">LISTEN</a></li>
+                        <li><a href="merch.html">MERCH</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="single-section">
+                <div class="slide-effect">
+                    <h2 class="slide-up">New Singles</h2>
+                </div>
+                <!-- change this -->
+                <!-- <i class="fa-solid fa-angle-down"></i>  -->
+                <div class="content content1">
+                    <div class="single">
+                    <!-- <p>See it Through</p> -->
+                    <div class="image-section">
+                        <img class="image" src="cssPhotos/seeItThrough.jpg" alt="see it through single cover">
+                        <div class="listenBtn">
+                            <a href="https://songwhip.com/blvck4/see-it-through" target="_blank">LISTEN NOW</a>
+                        </div>
+                        <!-- <li onclick="listenFunction()" onclick ="showImage()"class="listen-button"><a href="">LISTEN</a></li> -->
+                    </div>
+                </div>
+                <div class="single">
+                    <div class="image-section"> 
+                        <img class="image"src="cssPhotos/loveIsWar.jpg" alt="Love is War single cover">
+                    <div class="listenBtn">
+                        <a href="https://songwhip.com/blvck4/love-is-war" target="_blank">LISTEN NOW</a>
+                    </div>
+                        <!-- <li onclick="listenFunction(2)" onclick="listenFunction()" class="listen-button"><a href="">LISTEN</a></li> -->
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div id="album-section">
+                <div class="slide-effect">
+                    <h2 class="slide-up2">Album Releases</h2>
+                </div>
+                <!-- change this -->
+                <!-- <i class="fa-solid fa-angle-down"></i>  -->
+                <div class="content content2">
+                    <!-- <div class="album-grid"> -->
+                    <div class="album album2">
+                        <div class="image-section">
+                            <img src="cssPhotos/blackTapes2.jpg" alt="black tapes vol.2 allbum">
+                            <div class="listenBtn">
+                                <a href="https://songwhip.com/blvck4/blvck-tapes-vol-2" target="_blank">LISTEN NOW</a>
+                            </div>
+                        </div>
+
+                        <!-- <p>Blvck Tapes, Vol. 1</p> -->
+                    </div>
+                    <div class="album album1">
+                        <div class="image-section">
+                            <img src="cssPhotos/blackTapes1.jpg" alt="black tapes vol.1 album">
+                            <div class="listenBtn">
+                                <a href="https://songwhip.com/blvck4/blvck-tapes-vol-1" target="_blank">LISTEN NOW</a>
+                            </div>
+                        </div>
+                        
+                        <!-- <p>Blvck Tapes, Vol. 2</p> -->
+                    </div>
+
+                        <!-- <div class="album album3">
+                            <img src="itsTooLate.jpg" alt="it's too late album">
+                            <p>It's Too Late</p>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+            <div id="video-section">
+                <div class="slide-effect">
+                    <h2 class="slide-up3">MUSIC VIDEOS</h2>
+                </div>
+                <!-- change this -->
+                <!-- <i class="fa-solid fa-angle-down"></i>  -->
+                <div class="content content3">
+                    <div class="music-video mv1">
+                        <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/U6n9MEyYDIo" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe class="video" width="304" height="162" src="https://www.youtube.com/embed/U6n9MEyYDIo" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <p>See it Through</p> -->
+                        <div class="listenBtn videoListenBtn">
+                            <a href="https://youtu.be/U6n9MEyYDIo" target="_blank">WATCH ON YouTube</a>
+                        </div>
+                    </div>
+                    <div class="music-video mv2">
+                        <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe class="video" width="304" height="162" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <p>Love is War</p> -->
+                        <div class="listenBtn videoListenBtn">
+                            <a href="https://youtu.be/QYeZCLPmu_Q" target="_blank">WATCH ON YouTube</a>
+                        </div>
+                    </div>
+                    <div class="music-video mv3">
+                        <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe class="video" width="304" height="162s" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <p>Love is War</p> -->
+                        <div class="listenBtn videoListenBtn">
+                            <a href="https://youtu.be/QYeZCLPmu_Q" target="_blank">WATCH ON YouTube</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            
+
+        </div>
+    </div>
+    <!-- <div id="popOutContainer">
+        <div id="popOutVideo1" onclick="exitPopOut()">
+            <iframe width="416" height="216" src="https://www.youtube.com/embed/U6n9MEyYDIo" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="popOutVideo2" onclick="exitPopOut()">
+            <iframe width="416" height="216" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div> -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
