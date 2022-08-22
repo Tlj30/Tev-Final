@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <div id="preloader"></div>
 <header>
     <h2 id="logo">BLVCK</h2>
      <nav>
@@ -25,6 +25,13 @@
 <div id="coming-soon">
     <h1>Merch Coming Soon !</h1>
 </div>   
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+</script>
 
 </body>
 </html>

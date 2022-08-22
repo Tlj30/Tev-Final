@@ -13,7 +13,7 @@
     <title>Blvck Homepage</title>
 </head>
 <body>
-    
+    <div id="preloader"></div>
     <!-- This is section one (Artist Title) -->
     <section id="blvck">
     
@@ -65,6 +65,11 @@
     
     </footer>
 
-
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+    </script>
 </body>
 </html>
