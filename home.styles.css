@@ -1,9 +1,21 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
 body {
     background-color: black;
     margin: 0; 
     padding: 0;
 
 }
+
+
+@font-face {
+    font-family: infiniteDarkness;
+    src: url(infiniteDarkness.ttf);
+}
+
 
 
 /* This is the first section of HOMEPAGE*/
@@ -16,7 +28,7 @@ body {
     background-position: 50% 50%;
     background-attachment: fixed;
     font-size: 70px;
-    font-family: 'Bungee shade';
+    font-family: infiniteDarkness;
 }
 
 #blvck h1 {
@@ -55,11 +67,11 @@ body {
     align-items: center;
     justify-content: space-around;
     font-size: 60px;
-    font-family: 'Bungee shade';
+    font-family: infiniteDarkness;
 }
 
 #listen-section h1 a{
-    padding-right: 170px;
+    /* padding-right: 170px; */
     color: white;
 }
 
@@ -88,7 +100,7 @@ body {
     /* text-align: center; */
     justify-content: center;
     font-size: 60px;
-    font-family: 'Bungee Shade';
+    font-family: infiniteDarkness;
     background-attachment: fixed;
 }
 
@@ -130,7 +142,7 @@ body {
 	color: black;
 	display: flex;
 	justify-content: space-around;
-	font-family: 'Bungee Shade';
+	font-family: infiniteDarkness;
 }
 
 #footer-container h2{
@@ -165,24 +177,22 @@ span {
 }
 
 /* NAVBAR */
-/* 
-header {
-   
-} */
+
 
 #logo {
-    font-family: 'Bungee Shade';
-    color: black;
+    font-family: infiniteDarkness;
+    color: white;
 }
 
 .nav_links {
-    font-family: 'Bungee Shade';
+    font-family: infiniteDarkness;
     list-style: none;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .nav_links li a {
-    color: black;
+    color: white;
     transition: all .3s ease 0s;
 }
 
@@ -203,71 +213,18 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%; 
-    background-color: #e3aa00;
+    background-color: maroon;
     height: 30px;
 }
 
 /* Merch Page GRID */
-.grid-container {
-    display: grid;
+
+#coming-soon {
     color: white;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    column-gap: 50px;
-    row-gap: 50px;
-    padding-top: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* .grid-item {
-    border: 2px solid purple;
-} */
-
-#item1 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item2 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item3 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item4 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item5 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item6 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item7 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
-}
-
-#item8 {
-    background-image: url(joggers.jpg);
-    height: 400px;
-    background-position: left;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
 }
