@@ -17,8 +17,6 @@
 <body>
     <div id="preloader"></div>
     
-   
-    
     <div id="grid-section">
         <div id="logo"><h2>blvck</h2></div>
         <div id="bio-section">
@@ -106,20 +104,20 @@
         });
 
         // Enable hidden nav bar
-{
-  const nav = document.querySelector(".nav");
-  let lastScrollY = window.scrollY;
+// {
+//   const nav = document.querySelector(".nav");
+//   let lastScrollY = window.scrollY;
 
-  window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-      nav.classList.add("nav--hidden");
-    } else {
-      nav.classList.remove("nav--hidden");
-    }
+//   window.addEventListener("scroll", () => {
+//     if (lastScrollY < window.scrollY) {
+//       nav.classList.add("nav--hidden");
+//     } else {
+//       nav.classList.remove("nav--hidden");
+//     }
 
-    lastScrollY = window.scrollY;
-  });
-}
+//     lastScrollY = window.scrollY;
+//   });
+// }
 
    
         </script>
@@ -167,7 +165,7 @@
             <header>
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="home_index.html">HOME</a></li>
+                        <li><a href="home-page.html">HOME</a></li>
                         <li><a href="listen.html">LISTEN</a></li>
                         <li><a href="merch.html">MERCH</a></li>
                     </ul>
@@ -181,26 +179,35 @@
                 <!-- <i class="fa-solid fa-angle-down"></i>  -->
                 <div class="content content1">
                     <div class="single">
-                    <!-- <p>See it Through</p> -->
-                    <div class="image-section">
-                        <img class="image" src="cssPhotos/seeItThrough.jpg" alt="see it through single cover">
-                        <div class="listenBtn">
-                            <a href="https://songwhip.com/blvck4/see-it-through" target="_blank">LISTEN NOW</a>
+                        <!-- <p>See it Through</p> -->
+                            <div class="image-section">
+                                <img class="image" src="cssPhotos/unnamed.jpg" alt="see it through single cover">
+                                <div class="listenBtn">
+                                    <a href="https://songwhip.com/blvck4/blame" target="_blank">LISTEN NOW</a>
+                                </div>
+                                <!-- <li onclick="listenFunction()" onclick ="showImage()"class="listen-button"><a href="">LISTEN</a></li> -->
+                            </div>
                         </div>
-                        <!-- <li onclick="listenFunction()" onclick ="showImage()"class="listen-button"><a href="">LISTEN</a></li> -->
+                    <div class="single">
+                    <!-- <p>See it Through</p> -->
+                        <div class="image-section">
+                            <img class="image" src="cssPhotos/seeItThrough.jpg" alt="see it through single cover">
+                            <div class="listenBtn">
+                                <a href="https://songwhip.com/blvck4/see-it-through" target="_blank">LISTEN NOW</a>
+                            </div>
+                            <!-- <li onclick="listenFunction()" onclick ="showImage()"class="listen-button"><a href="">LISTEN</a></li> -->
+                        </div>
+                    </div>
+                    <div class="single">
+                        <div class="image-section"> 
+                            <img class="image"src="cssPhotos/loveIsWar.jpg" alt="Love is War single cover">
+                        <div class="listenBtn">
+                            <a href="https://songwhip.com/blvck4/love-is-war" target="_blank">LISTEN NOW</a>
+                        </div>
+                            <!-- <li onclick="listenFunction(2)" onclick="listenFunction()" class="listen-button"><a href="">LISTEN</a></li> -->
+                        </div>
                     </div>
                 </div>
-                <div class="single">
-                    <div class="image-section"> 
-                        <img class="image"src="cssPhotos/loveIsWar.jpg" alt="Love is War single cover">
-                    <div class="listenBtn">
-                        <a href="https://songwhip.com/blvck4/love-is-war" target="_blank">LISTEN NOW</a>
-                    </div>
-                        <!-- <li onclick="listenFunction(2)" onclick="listenFunction()" class="listen-button"><a href="">LISTEN</a></li> -->
-                    </div>
-                </div>
-                </div>
-                
             </div>
             <div id="album-section">
                 <div class="slide-effect">
@@ -217,7 +224,6 @@
                                 <a href="https://songwhip.com/blvck4/blvck-tapes-vol-2" target="_blank">LISTEN NOW</a>
                             </div>
                         </div>
-
                         <!-- <p>Blvck Tapes, Vol. 1</p> -->
                     </div>
                     <div class="album album1">
@@ -227,14 +233,17 @@
                                 <a href="https://songwhip.com/blvck4/blvck-tapes-vol-1" target="_blank">LISTEN NOW</a>
                             </div>
                         </div>
-                        
                         <!-- <p>Blvck Tapes, Vol. 2</p> -->
                     </div>
-
-                        <!-- <div class="album album3">
-                            <img src="itsTooLate.jpg" alt="it's too late album">
-                            <p>It's Too Late</p>
-                        </div> -->
+                    <!-- <div class="album album3">
+                        <div class="image-section">
+                            <img src="cssPhotos/blackTapes1.jpg" alt="it's too late album">
+                            <div class="listenBtn">
+                                <a href="https://songwhip.com/blvck4/blvck-tapes-vol-1" target="_blank">LISTEN NOW</a>
+                            </div>
+                        </div>
+                        
+                    </div> -->
                     <!-- </div> -->
                 </div>
 
@@ -250,24 +259,26 @@
                         <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/U6n9MEyYDIo" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe width="304" height="162" src="https://www.youtube.com/embed/Tc1B1wODwPg" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <p>See it Through</p> -->
+                        <div class="listenBtn videoListenBtn">
+                            <a href="https://youtu.be/Tc1B1wODwPg" target="_blank">WATCH ON YouTube</a>
+                        </div>
+                        
+        
+                    </div>
+                    <div class="music-video mv2">
+                        <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         <iframe class="video" width="304" height="162" src="https://www.youtube.com/embed/U6n9MEyYDIo" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <!-- <p>See it Through</p> -->
                         <div class="listenBtn videoListenBtn">
                             <a href="https://youtu.be/U6n9MEyYDIo" target="_blank">WATCH ON YouTube</a>
-                        </div>
-                    </div>
-                    <div class="music-video mv2">
-                        <!-- <iframe class="video" width="416" height="216" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                        <iframe class="video" width="304" height="162" src="https://www.youtube.com/embed/QYeZCLPmu_Q" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <!-- <p>Love is War</p> -->
-                        <div class="listenBtn videoListenBtn">
-                            <a href="https://youtu.be/QYeZCLPmu_Q" target="_blank">WATCH ON YouTube</a>
                         </div>
                     </div>
                     <div class="music-video mv3">
@@ -282,13 +293,8 @@
                             <a href="https://youtu.be/QYeZCLPmu_Q" target="_blank">WATCH ON YouTube</a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-
-
-            
-
         </div>
     </div>
     <!-- <div id="popOutContainer">
