@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="home.styles.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
     <title>Blvck Homepage</title>
 </head>
 <body>
-    
+    <div id="preloader"></div>
     <!-- This is section one (Artist Title) -->
     <section id="blvck">
     
@@ -22,11 +23,11 @@
 
     <!-- This is section two (Listen ) -->
     <section id="listen-section">
-        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-            <source src="video.mov" type="video/mp4">
+        <video id="background-video" autoplay loop muted poster='video_poster.jpg'>
+            <source src='video.mov' type="video/webm" >
         </video>
 
-        <h1 class="header"><a href ="listen.html">Listen</a></h1>
+        <h1 class="header"><a href ="listen.html">Listen</a></h1> 
 
     </section>
 
@@ -58,13 +59,21 @@
                    <a href="https://tiktok.com/@blvcknc"><img id="tiktok" src="https://cdn.shopify.com/s/files/1/0011/6005/2795/files/tiktok_c588a882-6333-4fd2-adec-bfba6d9f609c_200x.png?v=1622712079"></a> 
                     <a href="https://twitter.com/blvcknc"><img id="twitter" src="https://cdn.shopify.com/s/files/1/0011/6005/2795/files/twiter_200x.png?v=1622712069"></a>
                     <a href="https://instagram.com/blvcknc"><img id="instagram"src="https://cdn.shopify.com/s/files/1/0011/6005/2795/files/insta_200x.png?v=1622712057"></a>
-                    <!-- <img id="github" src="https://cdn.shopify.com/s/files/1/0011/6005/2795/files/discord_c171df6f-a6e6-4e18-bbad-d3196ea03efd_200x.png?v=1622712036"> -->
+                    <a href="https://www.youtube.com/channel/UCB6CIyE2VGiiGg_1BRUHZtw"><img id="youtube" src="https://1.bp.blogspot.com/-zaoiLHspoKI/XeI_0uFAeCI/AAAAAAAAF38/CyHgdY8bdOQ7d979yOJ0voSIA8b5bAF2wCLcBGAsYHQ/s1600/Youtube-Icon-2000x2000.png?width=200&height=200"></a>
+                    
+
+        
             </div>
         </div>
     </div>
     
     </footer>
 
-
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+    </script>
 </body>
 </html>
