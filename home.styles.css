@@ -18,9 +18,12 @@ body {
 
 
 
+
+
+
 /* This is the first section of HOMEPAGE*/
 #blvck {
-    background-image: url(homepic_final.jpg);
+    background-image: url(original.jpg);
     height: 100vh;
     color: white;
     display: flex;
@@ -29,7 +32,11 @@ body {
     background-attachment: fixed;
     font-size: 70px;
     font-family: infiniteDarkness;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
 
 #blvck h1 {
     padding-left: 170px;
@@ -61,13 +68,16 @@ body {
 #listen-section {
     height: 100vh;
     color: white;
-    background-repeat: no-repeat;
-    background-position: right;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    /* background-repeat: no-repeat; */
+    /* background-position: right;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 60px;
     font-family: infiniteDarkness;
+    /* background-image: url(video_poster.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 #listen-section h1 a{
@@ -79,7 +89,7 @@ body {
 #background-video {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    /* object-fit: cover; */
     position: fixed;
     left: 0;
     right: 0;
@@ -87,6 +97,7 @@ body {
     bottom: 0;
     z-index: -1;
   }
+
 
 
 
@@ -102,6 +113,8 @@ body {
     font-size: 60px;
     font-family: infiniteDarkness;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -162,7 +175,17 @@ body {
 }
 
 #social-buttons img{
-	height: 60px;
+	height: 55px;
+}
+
+#youtube {
+    border: 0;
+    border-radius: 40px;
+
+}
+
+#f3{
+    text-align: center;
 }
 
 /* Merch Page CSS */
@@ -226,7 +249,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 500px;
-    
+    font-size: 36px;
 }
 
 /* PRELOADER */
@@ -240,3 +263,80 @@ header{
     /* opacity:0; */
    
 }
+
+/* MEDIA QUERIES SECTION */
+@media screen and (max-height: 950px) and (max-width: 426px) {
+    #blvck {
+        background-image: url(original.jpg);
+        height: 100vh;
+        display: flex;
+        color: white;
+        align-items: center;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        font-size: 40px;
+        font-family: infiniteDarkness;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+    }
+
+    #blvck h1 {
+        padding-left: 10px;
+    } 
+
+
+    #listen-section {
+        font-size: 40px;
+        background-image: url(video_poster.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    #merch-section {
+        font-size: 40px;
+        background-image: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .95) ), url(joggers.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #footer-container {
+        font-size: 10px;
+        height: 200px;
+    }
+
+    #site-map{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%; 
+        background-color: maroon;
+        height: 30px;
+    }
+
+    #coming-soon {
+        text-align: center;
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px;
+        padding-bottom: 10px;
+        
+    }
+
+    .nav_links li a {
+        font-size: 15px;
+      
+    }
+
+        #logo {
+            font-size: 15px;
+        }
+}
+
